@@ -11,3 +11,7 @@ $tb: 375px; // スマートフォン用のブレイクポイント
         @content;
     }
 }
+
+.c-header__phone {
+    height:auto ;
+}
