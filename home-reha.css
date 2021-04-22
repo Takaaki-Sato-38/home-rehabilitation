@@ -8,6 +8,32 @@
   position: relative;
 }
 
+.l-header-logo {
+  position: relative;
+  left: 10px;
+  top: 10px;
+}
+
+.l-header-title {
+  position: absolute;
+  top: 134px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+.l-header-phone {
+  position: absolute;
+  top: 134px;
+  left: 75%;
+}
+
+.l-header-phone-number {
+  position: absolute;
+  top: 134px;
+  left: 80%;
+}
+
 .p-menu {
   position: absolute;
   right: 0;
