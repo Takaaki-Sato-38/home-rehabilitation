@@ -38,6 +38,7 @@ $tb: 375px; // スマートフォン用のブレイクポイント
     
   } 
   &-phone-number {
+      display: block;
       position: absolute;
       top: 134px;
       left: 80%;
@@ -52,6 +53,10 @@ $tb: 375px; // スマートフォン用のブレイクポイント
     height: 86px;
     width: 50%;
     
+}
+
+.c-header__phone-number {
+    font-size: 32px;
 }
 
 .c-menu__list {

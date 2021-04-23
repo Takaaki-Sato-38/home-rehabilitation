@@ -29,6 +29,7 @@
 }
 
 .l-header-phone-number {
+  display: block;
   position: absolute;
   top: 134px;
   left: 80%;
@@ -46,6 +47,10 @@
           flex-direction: row-reverse;
   height: 86px;
   width: 50%;
+}
+
+.c-header__phone-number {
+  font-size: 32px;
 }
 
 .c-menu__list {
