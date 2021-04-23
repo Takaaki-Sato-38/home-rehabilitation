@@ -21,7 +21,7 @@
         <header class="l-header">
             <nav class="l-header-nav p-header-nav">
                 <ul class="p-menu">
-                    <li class="c-menu__list c-menu__list--facility"><a href="#">老人保健施設とらねこ</a></li>
+                    <li class="c-menu__list c-menu__list--facility"><a href="#">老人保健施設○○</a></li>
                     <li class="c-menu__list c-menu__list--privacy"><a href="#">個人情報保護方針</a></li>
                     <li class="c-menu__list c-menu__list--notice"><a href="#">お知らせ</a></li>
                     <li class="c-menu__list c-menu__list--greeting"><a href="#">ごあいさつ</a></li>
@@ -29,12 +29,30 @@
                     
                     
                 </ul>
+                <div class="openbtn1"><span></span><span></span><span></span></div>
             </nav>
+            <nav id="g-nav">
+                <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                  <ul>
+                    <li><a href="#">老人保健施設○○</a></li>  
+                    <li><a href="#">個人情報保護方針</a></li>  
+                    <li><a href="#">お知らせ</a></li>  
+                    <li><a href="#">老人保健施設○○</a></li>  
+                  </ul>
+                </div>
+              </nav>
             <div class="l-header-logo p-header__logo">
                 <img src="images/neko-logo.png">
+                
+            </div>
+            <div class="l-header-logo--tb p-header__logo--tb">
+                <img src="images/neko-logo-tb.png">
             </div>
             <h1 class="l-header-title p-header__tltle">訪問リハビリテーション事業所  ねこ</h1>
-            <p class="l-header-phone p-header__phone"><i class="fas fa-phone-square-alt fa-3x"></i></p>
+            <p class="l-header-phone p-header__phone">
+                <i class="c-phone fas fa-phone-square-alt c-phone"></i>
+                
+            </p>
             <p class="l-header-phone-number c-header__phone-number">0000-00-0000</p>
         </header>
         <main>
@@ -43,5 +61,6 @@
         <footer>
 
         </footer>
+        <script src="home-reha.js" type="text/javascript"></script>
     </body>
 </html>
