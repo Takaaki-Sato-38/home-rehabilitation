@@ -111,6 +111,10 @@ $tb: 920px; // スマートフォン用のブレイクポイント
     
 }
 
+.c-menu__list:hover {
+    background-color: #F2ACD2;
+}
+
 .c-phone {
     font-size: 32px;
     @include tb {
@@ -133,6 +137,16 @@ $tb: 920px; // スマートフォン用のブレイクポイント
     }
 }
 
+.p-menu-tb {
+    display: none;
+    @include tb {
+        display: block;
+        position: relative;
+        color: #707070;
+        left: 85%;
+        margin-left: 3px;
+    }
+}
 
 .openbtn1 span{
     display: inline-block;
@@ -141,7 +155,7 @@ $tb: 920px; // スマートフォン用のブレイクポイント
     left: 14px;
     height: 3px;
     border-radius: 2px;
-    background: #fff;
+    background: #707070;
     width: 45%;
     }
   

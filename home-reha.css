@@ -121,6 +121,10 @@
   text-decoration: none;
 }
 
+.c-menu__list:hover {
+  background-color: #F2ACD2;
+}
+
 .c-phone {
   font-size: 32px;
 }
@@ -150,6 +154,20 @@
   }
 }
 
+.p-menu-tb {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  .p-menu-tb {
+    display: block;
+    position: relative;
+    color: #707070;
+    left: 85%;
+    margin-left: 3px;
+  }
+}
+
 .openbtn1 span {
   display: inline-block;
   -webkit-transition: all .4s;
@@ -159,7 +177,7 @@
   left: 14px;
   height: 3px;
   border-radius: 2px;
-  background: #fff;
+  background: #707070;
   width: 45%;
 }
 
