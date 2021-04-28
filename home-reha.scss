@@ -12,6 +12,11 @@ $tb: 920px; // スマートフォン用のブレイクポイント
     }
 }
 
+.header {
+    width: 100%;
+    height: auto;
+}
+
 .l-header {
   width: 100%;
   height: 224px;
@@ -19,12 +24,12 @@ $tb: 920px; // スマートフォン用のブレイクポイント
   @include sp {
       height: 144px;
   }
-  &-nav {
+  &__nav {
       position: relative;
       
       
   } 
-  &-logo {
+  &__logo {
       display: block;
       position: relative;
       left: 10px;
@@ -34,7 +39,7 @@ $tb: 920px; // スマートフォン用のブレイクポイント
           display: none;
       }
   }
-  &-logo--tb {
+  &__logo--tb {
       display: none;
       @include tb {
           display: block;
@@ -47,7 +52,7 @@ $tb: 920px; // スマートフォン用のブレイクポイント
           display: none;
       }
   }
-  &-logo--sp {
+  &__logo--sp {
       display: none;
       @include sp {
           display: block;
@@ -57,7 +62,7 @@ $tb: 920px; // スマートフォン用のブレイクポイント
           width: 87px;
       }
   }
-  &-title {
+  &__title {
       position: absolute;
       top: 134px;
       left: 50%;
@@ -68,7 +73,7 @@ $tb: 920px; // スマートフォン用のブレイクポイント
           width: 100%;
       }
   }
-  &-phone {
+  &__phone {
     position: absolute;
     top: 141px;
     left: 75%;
@@ -83,7 +88,7 @@ $tb: 920px; // スマートフォン用のブレイクポイント
     }
     
   } 
-  &-phone-number {
+  &__phone-number {
       display: block;
       position: absolute;
       top: 134px;
@@ -92,6 +97,29 @@ $tb: 920px; // スマートフォン用のブレイクポイント
           display: none;
       }
   } 
+
+  
+
+  &__main-visual {
+      position: relative;
+      width: 100%;
+      height: auto;
+      background-image: url(images/header-image.png);
+      background-size: cover;
+      padding-top: 44%;
+
+  }
+  
+  &__main-visual--cover {
+      width: 100%;
+      height: auto;
+      background-color: rgba( 255, 255, 255, 0.8 );
+      position: absolute;
+      top: 50%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      transform: translate(0, -50%);
+  }
 }
 
 .p-menu {
@@ -290,3 +318,15 @@ $tb: 920px; // スマートフォン用のブレイクポイント
     font-weight: bold;
     font-size: 16px;
     }
+
+/*main-visual*/
+.c-header__main-visual--text {
+    text-align: center;
+    font-size: 20px;
+    @include tb {
+        font-size: 16px;
+    }
+    @include sp {
+        font-size: 12px;
+    }
+}
