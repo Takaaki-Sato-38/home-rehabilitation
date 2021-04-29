@@ -107,8 +107,12 @@ $tb: 920px; // スマートフォン用のブレイクポイント
       background-image: url(images/header-image.png);
       background-size: cover;
       padding-top: 44%;
+      @include sp {
+          background-image: url(images/header-image-sp.png);
+      }
 
   }
+  
   
   &__main-visual--cover {
       width: 100%;
@@ -119,7 +123,42 @@ $tb: 920px; // スマートフォン用のブレイクポイント
       padding-top: 5%;
       padding-bottom: 5%;
       transform: translate(0, -50%);
+      @include sp {
+          padding-top: 44%;
+          padding-bottom: 0%;
+      }
   }
+}
+
+.l-about {
+    
+    width: 100%;
+    height: auto;
+
+    &__main-visual {
+        background-color: #ffffff;
+        width: 90%;
+        height: auto;
+        padding-top: 38%;
+        margin: auto;
+        margin-top: 48px;
+        margin-bottom: 63px;
+        border: 1px solid #666666;
+        position: relative;
+    }
+
+    &__img {
+        background-image: url(images/komarigao.png);
+        width: 50%;
+        left: 25%;
+        height: auto;
+        padding-top: 30%;
+        /* margin: auto; */
+        position: absolute;
+        top: 25%;
+        background-size: cover;
+    }
+
 }
 
 .p-menu {
@@ -323,10 +362,14 @@ $tb: 920px; // スマートフォン用のブレイクポイント
 .c-header__main-visual--text {
     text-align: center;
     font-size: 20px;
+    width: 100%;
     @include tb {
         font-size: 16px;
     }
     @include sp {
-        font-size: 12px;
+        font-size: 10px;
+        position: absolute;
+        top: 50%;
+        
     }
 }
