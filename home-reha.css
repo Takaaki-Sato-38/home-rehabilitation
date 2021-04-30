@@ -174,10 +174,21 @@
   left: 25%;
   height: auto;
   padding-top: 30%;
-  /* margin: auto; */
   position: absolute;
   top: 25%;
   background-size: cover;
+}
+
+@media (max-width: 920px) {
+  .l-about__img {
+    width: 60%;
+    left: 40%;
+    top: 10%;
+  }
+}
+
+.l-about__text--wrapper {
+  width: 100%;
 }
 
 .p-menu {
@@ -423,6 +434,69 @@
     font-size: 10px;
     position: absolute;
     top: 50%;
+  }
+}
+
+.c-about__text {
+  position: absolute;
+  top: 20px;
+  left: 5%;
+}
+
+.c-about__text-2 {
+  left: 65%;
+}
+
+@media (max-width: 920px) {
+  .c-about__text-2 {
+    left: 5%;
+    top: 50px;
+  }
+}
+
+.c-about__text-3 {
+  top: 120px;
+  left: 10px;
+}
+
+@media (max-width: 920px) {
+  .c-about__text-3 {
+    top: 80px;
+    left: 5%;
+  }
+}
+
+.c-about__text-4 {
+  top: 120px;
+  left: 70%;
+}
+
+@media (max-width: 920px) {
+  .c-about__text-4 {
+    top: 110px;
+    left: 5%;
+  }
+}
+
+.c-about__text-5 {
+  top: 200px;
+}
+
+@media (max-width: 920px) {
+  .c-about__text-5 {
+    top: 140px;
+  }
+}
+
+.c-about__text-6 {
+  top: 200px;
+  left: 65%;
+}
+
+@media (max-width: 920px) {
+  .c-about__text-6 {
+    left: 5%;
+    top: 170px;
   }
 }
 /*# sourceMappingURL=home-reha.css.map */

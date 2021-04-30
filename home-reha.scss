@@ -153,10 +153,20 @@ $tb: 920px; // スマートフォン用のブレイクポイント
         left: 25%;
         height: auto;
         padding-top: 30%;
-        /* margin: auto; */
+        
         position: absolute;
         top: 25%;
         background-size: cover;
+        @include tb {
+            width: 60%;
+            left: 40%;
+            
+            top: 10%;
+            
+        }
+    }
+    &__text--wrapper {
+        width: 100%;
     }
 
 }
@@ -372,4 +382,55 @@ $tb: 920px; // スマートフォン用のブレイクポイント
         top: 50%;
         
     }
+}
+
+.c-about__text {
+    position: absolute;
+    top: 20px;
+    left: 5%;
+
+    &-2 {
+        left: 65%;
+        @include tb {
+            left: 5%;
+            top: 50px;
+        }
+    }
+
+    &-3 {
+        top: 120px;
+        left: 10px;
+        @include tb {
+            top: 80px;
+            left: 5%;
+        }
+    }
+
+    &-4 {
+        top: 120px;
+        left: 70%;
+        @include tb {
+            top: 110px;
+            left: 5%;
+        }
+    }
+
+    &-5 {
+        top: 200px;
+        @include tb {
+            top: 140px;
+        }
+    }
+
+    &-6 {
+        top: 200px;
+        left: 65%;
+        @include tb {
+            left: 5%;
+            top: 170px;
+        }
+    }
+
+
+
 }
