@@ -160,10 +160,9 @@
   /* background-color: #ffffff; */
   width: 90%;
   height: auto;
-  padding-top: 38%;
+  padding-top: 25%;
   margin: auto;
   margin-top: 48px;
-  margin-bottom: 63px;
   /*border: 1px solid #666666;
         position: relative;*/
   position: relative;
@@ -200,7 +199,6 @@
   height: auto;
   padding-top: 30%;
   position: absolute;
-  top: 25%;
   background-size: cover;
 }
 
@@ -481,7 +479,7 @@
 
 .c-about__text-3 {
   top: 120px;
-  left: 10px;
+  left: 5%;
 }
 
 @media (max-width: 920px) {
@@ -493,7 +491,7 @@
 
 .c-about__text-4 {
   top: 120px;
-  left: 70%;
+  left: 65%;
 }
 
 @media (max-width: 920px) {

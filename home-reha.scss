@@ -139,10 +139,9 @@ $tb: 920px; // スマートフォン用のブレイクポイント
         /* background-color: #ffffff; */
         width: 90%;
         height: auto;
-        padding-top: 38%;
+        padding-top: 25%;
         margin: auto;
         margin-top: 48px;
-        margin-bottom: 63px;
         /*border: 1px solid #666666;
         position: relative;*/
 
@@ -185,7 +184,7 @@ $tb: 920px; // スマートフォン用のブレイクポイント
         padding-top: 30%;
         
         position: absolute;
-        top: 25%;
+        
         background-size: cover;
         @include tb {
             width: 60%;
@@ -429,7 +428,7 @@ $tb: 920px; // スマートフォン用のブレイクポイント
 
     &-3 {
         top: 120px;
-        left: 10px;
+        left: 5%;
         @include tb {
             top: 80px;
             left: 5%;
@@ -438,7 +437,7 @@ $tb: 920px; // スマートフォン用のブレイクポイント
 
     &-4 {
         top: 120px;
-        left: 70%;
+        left: 65%;
         @include tb {
             top: 110px;
             left: 5%;
