@@ -286,6 +286,10 @@ $tb: 920px; // スマートフォン用のブレイクポイント
     justify-content: center;
     align-items: center;
     border: 1px solid;
+
+    @include sp {
+        height: 64px;
+    }
 }
 
 .p-menu {
