@@ -274,6 +274,13 @@
   z-index: -1;
 }
 
+@media (max-width: 375px) {
+  .l-about__img {
+    width: 300px;
+    margin-top: 10%;
+  }
+}
+
 .l-about__text--wrapper {
   width: 100%;
 }
@@ -318,23 +325,55 @@
 
 .l-how-to {
   width: 100%;
-  background-color: #F8F5F5;
-  height: 108px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 1px solid;
+  height: auto;
+}
+
+.l-how-to__title {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 920px) {
+  .l-how-to__title {
+    font-size: 14px;
+  }
+}
+
+.l-how-to__content {
+  background-color: #FADFEF;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 64px;
+}
+
+@media (max-width: 920px) {
+  .l-how-to__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
 }
 
 @media (max-width: 375px) {
-  .l-how-to {
-    height: 64px;
+  .l-how-to__content {
+    gap: 20px;
+    padding: 20px;
   }
 }
 
@@ -644,6 +683,62 @@
   .c-about__text-6 {
     left: 5%;
     top: 170px;
+  }
+}
+
+.c__title {
+  width: 100%;
+  background-color: #F8F5F5;
+  height: 108px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid;
+  font-size: 20px;
+}
+
+@media (max-width: 920px) {
+  .c__title {
+    height: 64px;
+    font-size: 12px;
+  }
+}
+
+.c__content {
+  background-color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+  height: 108px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 920px) {
+  .c__content {
+    height: 50px;
+  }
+}
+
+.c__content p {
+  font-size: 16px;
+}
+
+@media (max-width: 920px) {
+  .c__content p {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=home-reha.css.map */
