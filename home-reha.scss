@@ -133,7 +133,7 @@ $tb: 920px; // スマートフォン用のブレイクポイント
 .l-about {
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 550px;
 
     &__main-visual {
         
@@ -323,7 +323,17 @@ $tb: 920px; // スマートフォン用のブレイクポイント
 }
 
 .l-staff__list {
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    @include tb {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include sp {
+        grid-template-columns: 1fr;
+    }
 }
 
 
@@ -347,6 +357,25 @@ $tb: 920px; // スマートフォン用のブレイクポイント
     @include tb {
         font-size: 20px;
     }
+}
+
+.p-menu-tb {
+    display: none;
+    @include tb {
+        display: block;
+        position: relative;
+        color: #707070;
+        
+        margin-left: 3px;
+        width: 50px;
+        top: -7px;
+        left: 85%;
+    }
+}
+
+.p-staff__card {
+    border-radius: 20px;
+    background-color: #FFD6DD;
 }
 
 .c-header__phone-number {
@@ -405,25 +434,7 @@ $tb: 920px; // スマートフォン用のブレイクポイント
     }
 }
 
-.p-menu-tb {
-    display: none;
-    @include tb {
-        display: block;
-        position: relative;
-        color: #707070;
-        
-        margin-left: 3px;
-        width: 50px;
-        top: -7px;
-        left: 85%;
-    }
-}
 
-.p-staff__card {
-    border-radius: 20px;
-    background-color: #FFD6DD;
-    width: 386px;
-}
 
 .openbtn1 span{
     display: inline-block;
@@ -480,7 +491,7 @@ $tb: 920px; // スマートフォン用のブレイクポイント
         right: -120%;
         width:100%;
         max-width: 920px;
-        height: 665px;/*ナビの高さ*/
+        height: 1000px;/*ナビの高さ*/
         background: #FADFEF;
         /*動き*/
         transition: all 0.6s;
@@ -498,7 +509,7 @@ $tb: 920px; // スマートフォン用のブレイクポイント
     position: fixed;
     z-index: 999; 
     width: 100%;
-    height: 665px;/*表示する高さ*/
+    height: 1000px;/*表示する高さ*/
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     }
@@ -508,7 +519,7 @@ $tb: 920px; // スマートフォン用のブレイクポイント
     /*ナビゲーション天地中央揃え*/
     position: absolute;
     z-index: 999;
-    top:50%;
+    top:20%;
     left:45%;
     transform: translate(-50%,-50%);
     }
@@ -547,56 +558,7 @@ $tb: 920px; // スマートフォン用のブレイクポイント
     }
 }
 
-.c-about__text {
-    position: absolute;
-    top: 20px;
-    left: 5%;
 
-    &-2 {
-        left: 65%;
-        @include tb {
-            left: 5%;
-            top: 50px;
-        }
-    }
-
-    &-3 {
-        top: 120px;
-        left: 5%;
-        @include tb {
-            top: 80px;
-            left: 5%;
-        }
-    }
-
-    &-4 {
-        top: 120px;
-        left: 65%;
-        @include tb {
-            top: 110px;
-            left: 5%;
-        }
-    }
-
-    &-5 {
-        top: 200px;
-        @include tb {
-            top: 140px;
-        }
-    }
-
-    &-6 {
-        top: 200px;
-        left: 65%;
-        @include tb {
-            left: 5%;
-            top: 170px;
-        }
-    }
-
-
-
-}
 
 .c__title {
     width: 100%;
@@ -609,7 +571,7 @@ $tb: 920px; // スマートフォン用のブレイクポイント
     font-size: 20px;
     @include tb {
         height: 64px;
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -647,16 +609,32 @@ $tb: 920px; // スマートフォン用のブレイクポイント
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #FFD6DD;
+    margin-top: 20px;
+    img {
+        width: 50%;
+        height: auto;
+    
+    }
 }
 
 .c__staff--title {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    @include sp {
+        font-size: 14px;
+    }
 }
 
 .c__staff--text {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
+    @include tb {
+        font-size: 14px;
+    }
+    @include sp {
+        font-size: 12px;
+    }
 }
