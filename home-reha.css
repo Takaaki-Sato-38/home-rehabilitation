@@ -329,16 +329,8 @@
 }
 
 .l-how-to__title {
-  font-size: 20px;
-  text-align: center;
   margin-top: 24px;
   margin-bottom: 24px;
-}
-
-@media (max-width: 920px) {
-  .l-how-to__title {
-    font-size: 14px;
-  }
 }
 
 .l-how-to__content {
@@ -375,6 +367,11 @@
     gap: 20px;
     padding: 20px;
   }
+}
+
+.l-staff__title {
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .p-menu {
@@ -483,6 +480,12 @@
     top: -7px;
     left: 85%;
   }
+}
+
+.p-staff__card {
+  border-radius: 20px;
+  background-color: #FFD6DD;
+  width: 386px;
 }
 
 .openbtn1 span {
@@ -740,5 +743,40 @@
   .c__content p {
     font-size: 12px;
   }
+}
+
+.c__content-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (max-width: 920px) {
+  .c__content-title {
+    font-size: 14px;
+  }
+}
+
+.c__staff--image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c__staff--title {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.c__staff--text {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
 /*# sourceMappingURL=home-reha.css.map */
